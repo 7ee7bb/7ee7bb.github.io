@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/nav.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/quote.css">
+    <link rel="stylesheet" href="/css/card.css">
+    <script src="/js/lib/jquery-3.6.4.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/lib/gsap.min.js"></script>
+    <script src="/js/lib/p5.min.js"></script>
+    <script src="/js/sketches/smiley/sketch-smiley.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navInActive">
+        <a href="/index.html">
+            <img class="logo" src="/img/logo.svg" alt="logo">
+        </a>
+        <div class="burger" onclick="toggleNav(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <ul>
+            <li class="current">
+                <a href="/index.html">About</a>
+            </li>
+            <li>
+                <a href="/html/projects.html">Projects</a>
+            </li>
+            <li>
+            </li>
+            <li>
+                <a href="/html/experiments.html">Experiments</a>
+            </li>
+            <li>
+                <a href="/html/contact.html">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <h1 class="centered-text">
+            Hi there, <br>
+            I'm K and I make stuff!
+        </h1>
+        <div class="quote-block">
+            <div class="quote">
+                <h3>
+                    I have a background in UI and UX Design and I'm currently studying "Interactive Media" at Hochschule
+                    Augsburg.
+                </h3>
+            </div>
+            <div id="sketch-smiley">
+                <div id="sketch-smiley-face">
+                    <p id="sketch-smiley-face-p">:)</p>
+                </div>
+            </div>
+        </div>
+        <h2 class="centered-text">
+            My work
+        </h2>
+        <div class="card-vertical-container">
+            <div class="card vertical">
+                <div class="card-image">
+                    <img src="/img/one-minute-03.jpg" alt="placeholder">
+                </div>
+                <div class="card-text">
+                    <h3 class="category">
+                        One Minute
+                    </h3>
+                    <h2>
+                        -SPIRALS-
+                    </h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non pariatur reiciendis rerum omnis!
+                        Ipsam
+                        doloribus neque pariatur.
+                    </p>
+                    <a href="/html/project-01.html">Have a look!</a>
+                </div>
+            </div>
+            <div class="card vertical">
+                <div class="card-image">
+                    <img src="/img/one-minute-02.jpg" alt="placeholder">
+                </div>
+                <div class="card-text">
+                    <h3>
+                        One Minute
+                    </h3>
+                    <h2>
+                        -WAVES-
+                    </h2>
+                    <p>
+                        Met consectetur adipisicing elit. Non rerum omnis! Ipsam
+                        doloribus neque pariatur lorem ipsum dolor sit.
+                    </p>
+                    <a href="/html/project-01.html">Have a look!</a>
+                </div>
+            </div>
+        </div>
+        <a class="centered-link" href="/html/projects.html">SEE ALL</a>
+        <h2 class="centered-text">
+            Experiments
+        </h2>
+        <div class="card-vertical-container">
+            <div class="card vertical wide">
+                <div class="card-image">
+                    <img src="/img/experiment-01.jpg" alt="placeholder">
+                </div>
+                <div class="card-text">
+                    <h3 class="category">
+                        Experiments
+                    </h3>
+                    <h2>
+                        -EYES-
+                    </h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non pariatur reiciendis rerum omnis!
+                        Ipsam
+                        doloribus neque pariatur.
+                    </p>
+                    <a href="/html/project-01.html">Have a look!</a>
+                </div>
+            </div>
+            <div class="card vertical">
+                <div class="card-image">
+                    <img src="/img/experiment-02.png" alt="placeholder">
+                </div>
+                <div class="card-text">
+                    <h3>
+                        Experiments
+                    </h3>
+                    <h2>
+                        -MARBLES-
+                    </h2>
+                    <p>
+                        Met consectetur adipisicing elit. Non rerum omnis! Ipsam
+                        doloribus neque pariatur lorem ipsum dolor sit.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Odit enim facilis esse ea assumenda rem!
+                    </p>
+                    <a href="/html/project-01.html">Have a look!</a>
+                </div>
+            </div>
+        </div>
+        <a class="centered-link" href="/html/experiments.html">SEE ALL</a>
+    </main>
+    <footer>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 👾</p>
+        <ul>
+            <li>
+                <a href="https://www.hs-augsburg.de/Service/Datenschutz.html">Datenschutz</a>
+            </li>
+            <li>
+                <a href="https://www.hs-augsburg.de/Service/Impressum.html">Impressum</a>
+            </li>
+        </ul>
+    </footer>
+
+</body>
+
+</html>

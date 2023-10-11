@@ -1,0 +1,122 @@
+.card-vertical-container {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    /* margin-bottom: 16px; */
+}
+
+.card-horizontal-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    /* margin-bottom: 16px; */
+}
+
+@media (max-width: 600px) {
+    .card-vertical-container {
+        flex-direction: column;
+    }
+}
+
+
+.card {
+    margin-bottom: 32px;
+    flex: 1;
+}
+
+.card a {
+    text-decoration: none;
+}
+
+.wide {
+    flex: 1.75;
+}
+
+.card a::after {
+    display: inline-block;
+    content: "\00a0 <-";
+    text-decoration: none;
+    transition: transform 0.2s ease;
+}
+
+.card a::before {
+    display: inline-block;
+    content: "-> \00a0 ";
+    text-decoration: none;
+    transition: transform 0.2s ease;
+}
+
+.card a:hover::after {
+    transform: translateX(-4px);
+}
+
+.card a:hover::before {
+    transform: translateX(4px);
+}
+
+.card h2 {
+    margin: 0;
+    line-height: 1.25;
+
+}
+
+.card h3 {
+    margin: 0;
+    line-height: 1.25;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.vertical {
+    max-width: 600px;
+}
+
+.vertical .card-text {
+    padding: 24px 0;
+
+}
+
+.horizontal {
+    display: flex;
+    max-width: 1024px;
+}
+
+.horizontal .card-text {
+    padding: 40px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.horizontal .card-image {
+    flex: 2;
+    max-height: 60000px;
+}
+
+.card-image {
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    .horizontal {
+        flex-direction: column;
+    }
+
+    .horizontal .card-text {
+        padding: 16px;
+        order: 2;
+    }
+    .horizontal .card-image {
+        order: 1;
+    }
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 32px;
+}

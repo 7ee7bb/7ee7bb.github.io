@@ -1,0 +1,43 @@
+.quote-block{
+    margin-bottom: 128px;
+    display: flex;
+    padding: 24px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light-grey);
+    border-radius: 32px;
+}
+.quote-block h3{
+    font-size: 27px;
+    opacity: 0.6;
+    font-weight: 400;
+    font-style: italic;
+    margin: 0px 12px;
+}
+@media (max-width: 600px) {
+    .quote-block{
+        flex-direction: column;
+    }
+}
+#sketch-smiley{
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+
+}
+#sketch-smiley-face{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    /* touch-action: manipulation; */
+
+}
+#sketch-smiley-face p{
+    margin:0;
+    font-size: 72px;
+    font-weight: 400;
+    color: var(--light-grey);
+    rotate: 90deg;
+    user-select: none;
+    -webkit-user-select: none;
+}
